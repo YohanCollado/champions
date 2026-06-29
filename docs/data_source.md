@@ -1,21 +1,21 @@
 # Data Sources
-This document explains where each feature is the prediction model come from.
+This document explains where each feature in the prediction model comes from.
 
 | Features | Raw or Engineered | Source | Update Frequency |
 |----------|-------------------|--------|------------------|
-| league_win_percentage | Raw | Football API | Every Match |
-| goals_scored | raw | Football API | Every Match |
-| goals_scored_last_5| Raw | ? | Every Match |
-| goals_conceded_last_5 | Raw | ? | Every Match | 
-| points_last_5 | Raw | ? | Every Match |
+| league_win_percentage | Raw | ? | Every Match |
+| goals_scored | raw | ? | Every Match |
+| goals_scored_last_5| Engineered | ? | Every Match |
+| goals_conceded_last_5 | Engineered | ? | Every Match | 
+| points_last_5 | Engineered | ? | Every Match |
 | goals_conceded | Raw | ? | Every Match |
 | goals_by_set_pieces | Raw | ? | Every Match |
 | squad_value | Raw | ? | Every Season |
-| injured_players_value| Raw | ? | Every Match |
-| missing_starting_player| Raw | ? | Every Match |
-| wins_last_5 | Raw | ? | Every Match |
-| draws_last_5 | Raw | ? | Every Match |
-| losses_last_5 | Raw | ? | Every Match |
+| injured_players_value| Engineered | ? | Every Match |
+| missing_starting_player| Engineered | ? | Every Match |
+| wins_last_5 | Engineered | ? | Every Match |
+| draws_last_5 | Engineered | ? | Every Match |
+| losses_last_5 | Engineered | ? | Every Match |
 | uefa_coefficient | Raw | ? | Every Match |
 | average_posession | Raw | ? | Every Match |
 | average_shots | Raw | ? | Every Match |
