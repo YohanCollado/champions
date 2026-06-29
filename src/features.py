@@ -6,7 +6,6 @@ import pandas as pd
 import numpy as np
 
 TEAM_FEATURES = [
-    'league_difficulty',
     'league_win_percentage'
     'goals_scored',
     'goals_scored_last_5',
