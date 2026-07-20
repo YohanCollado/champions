@@ -1,45 +1,37 @@
-# Data Sources
-This document explains where each feature in the prediction model comes from.
+# Data Source
 
-| Features | Raw or Engineered | Source | Update Frequency |
-|----------|-------------------|--------|------------------|
-| league_win_percentage | Raw | ? | Every Match |
-| goals_scored | raw | ? | Every Match |
-| goals_scored_last_5| Engineered | ? | Every Match |
-| goals_conceded_last_5 | Engineered | ? | Every Match | 
-| points_last_5 | Engineered | ? | Every Match |
-| goals_conceded | Raw | ? | Every Match |
-| goals_by_set_pieces | Raw | ? | Every Match |
-| squad_value | Raw | ? | Every Season |
-| injured_players_value| Engineered | ? | Every Match |
-| missing_starting_player| Engineered | ? | Every Match |
-| wins_last_5 | Engineered | ? | Every Match |
-| draws_last_5 | Engineered | ? | Every Match |
-| losses_last_5 | Engineered | ? | Every Match |
-| uefa_coefficient | Raw | ? | Every Match |
-| average_posession | Raw | ? | Every Match |
-| average_shots | Raw | ? | Every Match |
-| average_shots_on_target | Raw | ? | Every Match |
-| average_corners | Raw | ? | Every Match |
-| average_saves | Raw | ? | Every Match |
-| average_fouls_conceded | Raw | ? | Every Match |
-| average_xG | Raw | ? | Every Match |
-| average_duels_won_percentage | Raw | ? | Every Match |
-| average_offsides | Raw | ? | Every Match |
-| average_passes | Raw | ? | Every Match |
-| average_tackles_won | Raw | ? | Every Match |
-| average_aerial_duels_won | Raw | ? | Every Match |
-| average_pass_accuracy | Raw | ? | Every Match |
-| average_total_crosses | Raw | ? | Every Match |
-| average_yellow_cards | Raw | ? | Every Match |
-| average_red_cards | Raw | ? | Every Match |
-| goal_difference | Engineered | ? | Every Match |
-| home_win_percentage | Raw | ? | Every Match |
-| away_win_percentage | Raw | ? | Every Match |
-| clean_sheet_percentage | Raw | ? | Every Match |
-| ball_recoveries | Raw | ? | Every Match |
-| average_xGA | Raw | ? | Every Match |
-| average_team_age | Raw | ? | Every Match |
-| squad_value_rank | Raw | ? | Every Match |
-| manager_ucl_games | Raw | ? | Every Match |
-| player_maches_played | Raw | ? | Every Match |
+The submitted project uses public football match CSV files from football-data.co.uk.
+
+- Website: https://www.football-data.co.uk/
+- Data page: https://www.football-data.co.uk/downloadm.php
+- Included raw files: `data/raw/*.csv`
+- Final cleaned dataset: `data/champions_league_dataset.csv`
+
+## Included Seasons
+
+- 2021-2022
+- 2022-2023
+- 2023-2024
+- 2024-2025
+
+## Included Leagues
+
+| Code | League |
+|---|---|
+| `E0` | England Premier League |
+| `SP1` | Spain La Liga |
+| `I1` | Italy Serie A |
+| `D1` | Germany Bundesliga |
+| `F1` | France Ligue 1 |
+
+## Target
+
+The target is `match_result`, derived from `FTR`:
+
+- `H`: Home Win
+- `D`: Draw
+- `A`: Away Win
+
+## Notes
+
+The original project included a broad wish list of Champions League features. For this final assignment version, the model uses reliable columns available in the bundled CSV files. In-match statistics and final scores are kept for EDA but excluded from model features to avoid target leakage.

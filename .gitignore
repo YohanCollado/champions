@@ -1,142 +1,23 @@
-# ==========================================
-# Python
-# ==========================================
-__pycache__/
-*.py[cod]
-*$py.class
-*.so
-
-# ==========================================
-# Virtual Environments
-# ==========================================
-.venv/
-venv/
-env/
-ENV/
-
-# ==========================================
-# Environment Variables
-# ==========================================
 .env
 .env.*
 !.env.example
 
-# ==========================================
-# Python Packaging
-# ==========================================
-build/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
+venv/
+.venv/
+env/
+ENV/
 
-# ==========================================
-# Testing & Coverage
-# ==========================================
+__pycache__/
+*.py[cod]
 .pytest_cache/
-.coverage
-.coverage.*
-htmlcov/
-.tox/
-.nox/
-
-# ==========================================
-# Type Checking / Linting
-# ==========================================
-.mypy_cache/
-.pyre/
-.pytype/
-.ruff_cache/
-
-# ==========================================
-# Jupyter Notebooks
-# ==========================================
 .ipynb_checkpoints/
+.mypy_cache/
+.ruff_cache/
+reports/.matplotlib/
 
-# ==========================================
-# Machine Learning
-# ==========================================
-mlruns/
-wandb/
-lightning_logs/
-tensorboard_logs/
-logs/
-checkpoints/
-models/
-saved_models/
-*.ckpt
-*.pth
-*.pt
-*.h5
-*.keras
-*.pickle
-*.pkl
-*.joblib
-*.onnx
-
-# Large datasets
-data/raw/
-data/interim/
-data/external/
-
-# Ignore generated predictions
-predictions/
-submissions/
-
-# ==========================================
-# VS Code
-# ==========================================
-.vscode/
-
-# ==========================================
-# PyCharm
-# ==========================================
-.idea/
-
-# ==========================================
-# macOS
-# ==========================================
 .DS_Store
-
-# ==========================================
-# Windows
-# ==========================================
 Thumbs.db
 Desktop.ini
 
-# ==========================================
-# Logs
-# ==========================================
+YohanCollado/
 *.log
-logs/
-
-# ==========================================
-# Temporary Files
-# ==========================================
-tmp/
-temp/
-.cache/
-.cache-loader/
-
-# ==========================================
-# Misc
-# ==========================================
-*.bak
-*.swp
-*.swo
-
-# ==========================================
-# Secrets
-# ==========================================
-secrets/
-credentials/
-*.pem
-*.key

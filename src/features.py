@@ -1,50 +1,27 @@
-# Here we will calculate and manipulate features using 
-# Pandas is used to organize, clean and manipulate data
-# Numpy is used for extremely fast numerical operations
+"""Feature names used by the assignment model.
 
-import pandas as pd
-import numpy as np
+The original project started with a broader UEFA feature wish list. For the
+final submission, the production model uses features that are available in the
+included historical CSVs before each match is played.
+"""
 
 TEAM_FEATURES = [
-    'league_win_percentage'
-    'goals_scored',
-    'goals_scored_last_5',
-    'goals_conceded_last_5',
-    'points_last_5',
-    'goals_conceded',
-    'goals_by_set_piece',
-    'squad_value',
-    'average_chances_created',
-    'injured_players_value',
-    'missing_starting_player',
-    'wins_last_5',
-    'draws_last_5',
-    'losses_last_5',
-    'uefa_coefficient',
-    'average_posession',
-    'average_shots',
-    'average_shots_on_target',
-    'average_corners',
-    'average_saves',
-    'average_fouls_conceded',
-    'average_xG',
-    'average_duels_won_percentage',
-    'average_offsides',
-    'average_passes',
-    'average_tackles_won',
-    'average_aerial_duels_won',
-    'average_pass_accuracy',
-    'average_total_crosses',
-    'average_yellow_cards',
-    'average_red_cards',
-    'goal_difference',
-    'home_win_percentage',
-    'away_win_percentage',
-    'clean_sheet_percentage',
-    'ball_recoveries',
-    'average_xGA',
-    'average_team_age',
-    'squad_value_rank',
-    'manager_ucl_games',
-    'player_maches_played',
+    "home_matches_played_before",
+    "away_matches_played_before",
+    "home_win_rate_before",
+    "away_win_rate_before",
+    "home_goals_scored_last_5",
+    "away_goals_scored_last_5",
+    "home_goals_conceded_last_5",
+    "away_goals_conceded_last_5",
+    "home_points_last_5",
+    "away_points_last_5",
+    "home_rest_days",
+    "away_rest_days",
+    "home_advantage",
+    "team_experience_difference",
+    "win_rate_before_difference",
+    "goals_scored_last_5_difference",
+    "goals_conceded_last_5_difference",
+    "points_last_5_difference",
 ]
